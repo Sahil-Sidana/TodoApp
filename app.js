@@ -23,6 +23,7 @@ $('#list').on('click','span',function(e){
     e.stopPropogation(); //stop event bubbling
 });
 
+//+
 $('h1 span').on('click',function(){
     $('#inp').fadeToggle();
 })
