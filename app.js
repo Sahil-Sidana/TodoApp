@@ -1,5 +1,5 @@
 //mark done
-$('li').on('click',function(){
+$('#list').on('click','li',function(){
     $(this).toggleClass('completed');
 });
 
@@ -14,6 +14,12 @@ $('#inp').on('keypress',function(e){
 });
 
 //delete
-$('span').on('click',function(){
-    $(this).parent().remove();
+$('#list').on('click','span',function(e){
+
+    $(this).parent().fadeOut(550,function(){
+        $(this).remove();
+    });
+
+    e.stopPropogation(); //stop event bubbling
 });
+

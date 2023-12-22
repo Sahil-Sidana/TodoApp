@@ -1,9 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 .completed{
     text-decoration: line-through;
     color: gray;
+}
+
+#container{
+    margin:90px 525px;
+    /* padding:500px; */
 }
